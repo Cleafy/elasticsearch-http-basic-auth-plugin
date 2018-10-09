@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/Asquera/elasticsearch-http-basic.svg?branch=master)](https://travis-ci.org/Asquera/elasticsearch-http-basic)
 
 
-# HTTP Basic / Ip auth for ElasticSearch
+# HTTP Basic auth for ElasticSearch
 
 This plugin provides an extension of ElasticSearchs HTTP Transport module to enable **HTTP basic authentication** and/or
 **Ip based authentication**.
