@@ -1,0 +1,13 @@
+language: java
+script:
+  - mvn clean verify
+  - mvn package
+deploy:
+  skip_cleanup: true
+  provider: releases
+  file: target/releases/elasticsearch-http-basic-plugin.zip
+  api_key: b1f302f147825ef828d64a77cc5e37a9898f34a6
+  on:
+    repo: Sessa93/elasticsearch-http-basic
+    tags: true
+    branch: master
