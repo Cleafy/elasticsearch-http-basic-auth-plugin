@@ -1,5 +1,5 @@
 
-[![Build Status](https://travis-ci.org/Asquera/elasticsearch-http-basic.svg?branch=master)](https://travis-ci.org/Asquera/elasticsearch-http-basic)
+[![Build Status](https://travis-ci.org/Cleafy/elasticsearch6-http-basic.svg?branch=master)](https://github.com/Cleafy/elasticsearch6-http-basic)
 
 
 # HTTP Basic auth for ElasticSearch 6.x
