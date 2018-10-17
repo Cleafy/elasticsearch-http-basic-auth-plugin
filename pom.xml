@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.cleafy.elasticsearch6</groupId>
     <artifactId>elasticsearch6-http-basic</artifactId>
-    <version>1.0.0</version>
+    <version>0.0.1</version>
     <packaging>jar</packaging>
     <name>Elasticsearch 6.x Http Basic plugin</name>
     <description>Adds HTTP Basic authentication (BA) to your Elasticsearch cluster</description>
