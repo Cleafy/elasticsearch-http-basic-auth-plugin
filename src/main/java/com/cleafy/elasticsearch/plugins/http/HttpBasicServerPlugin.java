@@ -1,6 +1,6 @@
-package com.cleafy.elasticsearch6.plugins.http;
+package com.cleafy.elasticsearch.plugins.http;
 
-import com.cleafy.elasticsearch6.plugins.http.utils.Globals;
+import com.cleafy.elasticsearch.plugins.http.utils.Globals;
 import org.elasticsearch.common.inject.Inject;
 import org.elasticsearch.common.settings.Setting;
 import org.elasticsearch.common.settings.Settings;

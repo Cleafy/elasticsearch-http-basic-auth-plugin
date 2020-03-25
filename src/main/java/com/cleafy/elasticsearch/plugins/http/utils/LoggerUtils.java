@@ -1,4 +1,4 @@
-package com.cleafy.elasticsearch6.plugins.http.utils;
+package com.cleafy.elasticsearch.plugins.http.utils;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -36,6 +36,6 @@ public class LoggerUtils {
     }
 
     private static InetAddress getAddress(RestRequest request) {
-        return ((InetSocketAddress) request.getRemoteAddress()).getAddress();
+        return ((InetSocketAddress) request.getHttpChannel().getRemoteAddress()).getAddress();
     }
 }

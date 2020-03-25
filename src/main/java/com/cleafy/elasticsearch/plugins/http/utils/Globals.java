@@ -1,4 +1,4 @@
-package com.cleafy.elasticsearch6.plugins.http.utils;
+package com.cleafy.elasticsearch.plugins.http.utils;
 
 public class Globals {
     public static final String SETTINGS_ENABLED = "http.basic.enabled";

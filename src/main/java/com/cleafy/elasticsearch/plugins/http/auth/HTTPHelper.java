@@ -1,4 +1,4 @@
-package com.cleafy.elasticsearch6.plugins.http.auth;
+package com.cleafy.elasticsearch.plugins.http.auth;
 
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
@@ -13,13 +13,6 @@ public class HTTPHelper {
 
                 final String decodedBasicHeader = new String(Base64.getDecoder().decode(authorizationHeader.split(" ")[1]),
                         StandardCharsets.UTF_8);
-
-                //username:password
-                //special case
-                //username must not contain a :, but password is allowed to do so
-                //   username:pass:word
-                //blank password
-                //   username:
 
                 final int firstColonIndex = decodedBasicHeader.indexOf(':');
 

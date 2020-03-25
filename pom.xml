@@ -3,13 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.cleafy.elasticsearch6</groupId>
-    <artifactId>elasticsearch6-http-basic</artifactId>
-    <version>0.0.1</version>
+    <groupId>com.cleafy.elasticsearch</groupId>
+    <artifactId>elasticsearch-http-basic</artifactId>
+    <version>0.1.0</version>
     <packaging>jar</packaging>
-    <name>Elasticsearch 6.x Http Basic plugin</name>
+    <name>Elasticsearch Http Basic plugin</name>
     <description>Adds HTTP Basic authentication (BA) to your Elasticsearch cluster</description>
-    <url>https://github.com/Cleafy/elasticsearch-http-basic</url>
+    <url>https://github.com/Cleafy/elasticsearch6-http-basic</url>
     <inceptionYear>2018</inceptionYear>
 
     <properties>
@@ -21,14 +21,14 @@
         <dependency>
             <groupId>org.elasticsearch</groupId>
             <artifactId>elasticsearch</artifactId>
-            <version>6.3.2</version>
+            <version>7.6.0</version>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>org.elasticsearch.test</groupId>
             <artifactId>framework</artifactId>
-            <version>6.3.2</version>
+            <version>7.6.0</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -40,7 +40,7 @@
     </dependencies>
 
     <build>
-        <finalName>elasticsearch6-http-basic-plugin</finalName>
+        <finalName>elasticsearch-http-basic-plugin</finalName>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>

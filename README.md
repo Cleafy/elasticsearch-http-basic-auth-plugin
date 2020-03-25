@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/Cleafy/elasticsearch6-http-basic.svg?branch=master)](https://github.com/Cleafy/elasticsearch6-http-basic)
 
 
-# HTTP Basic auth for ElasticSearch 6.x
+# HTTP Basic auth for ElasticSearch
 
 This plugin provides an extension of ElasticSearchs HTTP Transport module to enable **HTTP basic authentication** and/or
 **Ip based authentication**.
@@ -16,7 +16,8 @@ There is no way to configure this on a per index basis.
 
 |     Http Basic Plugin       | elasticsearch                |
 |-----------------------------|------------------------------|
-| v1.0.0                      |                        6.3.2 |
+| v0.0.1                      |                        6.3.2 |
+| v0.1.0                      |                        7.6.0 |
 
 
 ## Installation

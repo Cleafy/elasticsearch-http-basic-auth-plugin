@@ -1,4 +1,4 @@
-package com.cleafy.elasticsearch6.plugins.http.auth;
+package com.cleafy.elasticsearch.plugins.http.auth;
 
 import org.elasticsearch.ElasticsearchSecurityException;
 

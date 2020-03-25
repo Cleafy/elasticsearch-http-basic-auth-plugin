@@ -1,9 +1,9 @@
-package com.cleafy.elasticsearch6.plugins.http;
+package com.cleafy.elasticsearch.plugins.http;
 
-import com.cleafy.elasticsearch6.plugins.http.auth.AuthCredentials;
-import com.cleafy.elasticsearch6.plugins.http.auth.HttpBasicAuthenticator;
-import com.cleafy.elasticsearch6.plugins.http.utils.Globals;
-import com.cleafy.elasticsearch6.plugins.http.utils.LoggerUtils;
+import com.cleafy.elasticsearch.plugins.http.auth.AuthCredentials;
+import com.cleafy.elasticsearch.plugins.http.auth.HttpBasicAuthenticator;
+import com.cleafy.elasticsearch.plugins.http.utils.Globals;
+import com.cleafy.elasticsearch.plugins.http.utils.LoggerUtils;
 import org.elasticsearch.ElasticsearchException;
 import org.elasticsearch.client.node.NodeClient;
 import org.elasticsearch.common.settings.Settings;
