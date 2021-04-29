@@ -4,7 +4,7 @@ import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.rest.RestRequest;
 
 public class HttpBasicAuthenticator extends Authenticator {
-    private AuthCredentials credentials;
+    private final AuthCredentials credentials;
 
     public HttpBasicAuthenticator(Settings settings, AuthCredentials credentials) {
         super(settings);
@@ -13,10 +13,7 @@ public class HttpBasicAuthenticator extends Authenticator {
 
     @Override
     public boolean authenticate(RestRequest request) {
-        if (this.extractCredentials(request).equals(credentials)) {
-            return true;
-        }
-        return false;
+        return this.extractCredentials(request).equals(credentials);
     }
 
     private AuthCredentials extractCredentials(final RestRequest request) {

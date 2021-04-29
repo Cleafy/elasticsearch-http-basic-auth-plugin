@@ -12,7 +12,7 @@ import org.elasticsearch.transport.TransportException;
 
 public class BasicRestFilter {
     private final HttpBasicAuthenticator httpBasicAuthenticator;
-    private boolean isUnauthLogEnabled;
+    private final boolean isUnauthLogEnabled;
 
     public BasicRestFilter(final Settings settings) {
         super();

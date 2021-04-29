@@ -19,7 +19,7 @@ import java.util.function.UnaryOperator;
  */
 public class HttpBasicServerPlugin extends Plugin implements ActionPlugin {
 
-    private boolean enabledByDefault = false;
+    private final boolean enabledByDefault = false;
     private final Settings settings;
     BasicRestFilter basicFilter;
 
@@ -40,9 +40,9 @@ public class HttpBasicServerPlugin extends Plugin implements ActionPlugin {
     @Override
     public UnaryOperator<RestHandler> getRestHandlerWrapper(final ThreadContext threadContext) {
         if (this.settings.getAsBoolean(Globals.SETTINGS_ENABLED, enabledByDefault)) {
-            return (rh) -> basicFilter.wrap(rh);
+            return rh -> basicFilter.wrap(rh);
         }
-        return (rh) -> rh;
+        return rh -> rh;
     }
 
     @Override
@@ -58,9 +58,8 @@ public class HttpBasicServerPlugin extends Plugin implements ActionPlugin {
 
     @Override
     public List<Setting<?>> getSettings() {
-        List<Setting<?>> settings = new ArrayList<Setting<?>>();
 
-        settings.addAll(super.getSettings());
+        List<Setting<?>> settings = new ArrayList<>(super.getSettings());
 
         settings.add(Setting.boolSetting(Globals.SETTINGS_ENABLED, enabledByDefault, Setting.Property.NodeScope, Setting.Property.Filtered));
         settings.add(Setting.simpleString(Globals.SETTINGS_USERNAME, Setting.Property.NodeScope, Setting.Property.Filtered));
