@@ -18,7 +18,7 @@ There is no way to configure this on a per index basis.
 |-----------------------------|------------------------------|
 | v0.0.1                      |                        6.3.2 |
 | v0.1.0                      |                        7.6.0 |
-
+| v0.2.0                      |                       7.12.0 |
 
 ## Installation
 

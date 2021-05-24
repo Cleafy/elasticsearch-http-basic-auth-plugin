@@ -11,7 +11,7 @@ public class AuthCredentials {
     private final String username;
     private byte[] password;
     private Object nativeCredentials;
-    private final Set<String> backendRoles = new HashSet<String>();
+    private final Set<String> backendRoles = new HashSet<>();
     private boolean complete;
     private final byte[] internalPasswordHash;
     private final Map<String, String> attributes = new HashMap<>();
@@ -116,11 +116,8 @@ public class AuthCredentials {
         if (internalPasswordHash == null || other.internalPasswordHash == null || !MessageDigest.isEqual(internalPasswordHash, other.internalPasswordHash))
             return false;
         if (username == null) {
-            if (other.username != null)
-                return false;
-        } else if (!username.equals(other.username))
-            return false;
-        return true;
+            return other.username == null;
+        } else return username.equals(other.username);
     }
 
     @Override
@@ -133,7 +130,7 @@ public class AuthCredentials {
      * @return Defensive copy of the roles this user is member of.
      */
     public Set<String> getBackendRoles() {
-        return new HashSet<String>(backendRoles);
+        return new HashSet<>(backendRoles);
     }
 
     public boolean isComplete() {

@@ -1,10 +1,19 @@
 <?xml version="1.0"?>
 <assembly>
-    <id>plugin</id>
+    <id>0.2.0</id>
     <formats>
         <format>zip</format>
     </formats>
     <includeBaseDirectory>false</includeBaseDirectory>
+    <fileSets>
+        <fileSet>
+            <outputDirectory>/</outputDirectory>
+            <directory>src/main/resources</directory>
+            <includes>
+                <include>*.properties</include>
+            </includes>
+        </fileSet>
+    </fileSets>
     <dependencySets>
         <dependencySet>
             <outputDirectory>/</outputDirectory>
@@ -19,7 +28,7 @@
             <useProjectArtifact>true</useProjectArtifact>
             <useTransitiveFiltering>true</useTransitiveFiltering>
             <includes>
-                <include>com.cleafy.elasticsearch:elasticsearch6-http-basic</include>
+                <include>com.cleafy.elasticsearch:elasticsearch-http-basic</include>
             </includes>
         </dependencySet>
     </dependencySets>
